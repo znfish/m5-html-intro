@@ -18,7 +18,6 @@
   - [Attributes](#attributes)
     - [Identifying Attributes](#identifying-attributes)
     - [Links](#links)
-- [About](#about)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -203,11 +202,11 @@ You can use specific tags to _**hyperlink**_ to other pages, or other sections o
 <a href="#about">About</a>
 
 <!-- More content would be here -->
-<section id="about">
-  <h1>About</h1>  
+<section id="bout">
   <p>This is a paragraph about the web-page... Maybe it also contains a
     <a href="https://en.wikipedia.org/wiki/Hyperlink">hyperlink!</a>
   </p>
 </section>
 ```
+
 Note, in the section above, the anchor tag uses the id `about` with a hash symbol (`#`) in front of it to indicate that it was using the section's `id` to specify the link location. For practice experimenting was basic HTML elements, see [exercise-1](exercise-1).
