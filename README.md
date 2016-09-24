@@ -1,4 +1,4 @@
-# Module 5: HTML
+# Module 5: Introduction to HTML
 
 ## Overview
 **HyperText Markup Language** is a programming language for describing how to display web documents. It uses `<tags>` to **mark up** plain text, and provide rendering instructions to a web-browser or other interpreter such as a screenreader. Even the most beautiful websites and complex data visualizations on the web are simply HTML elements arranged into what people perceive as intriguing sites or innovative charts.
@@ -13,10 +13,12 @@
     - [Self-Closing Tags](#self-closing-tags)
   - [Document Structure](#document-structure)
     - [Head section](#head-section)
-- [My Page Title](#my-page-title)
     - [Body Section](#body-section)
+- [My Big Page Heading](#my-big-page-heading)
   - [Attributes](#attributes)
     - [Identifying Attributes](#identifying-attributes)
+    - [Links](#links)
+- [About](#about)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -122,7 +124,7 @@ Given these properties, a typical `<head>` section of your webpage will look som
 ```
 
 ### Body Section
-The `<body>` section of your page contains all elements that you want to render for your user. The content in your `<body>` section is typically organized into a variety of sections:
+The `<body>` section of your page contains all elements that you want to render for your user. The content in your `<body>` section should be organized into a variety of _**semantically meaning**_ sections (more on this in [module-6](https://github.com/info343c-a16/m6-html-accessibility)). These descriptive containers aren't explicitly visible to your user, but allow you to organize your content into meaningful sections, allowing screen readers to process the information, and making your code _much_ more interpretable:
 
 - `header`: The top of your page, which may contain an image, description of your page, and navigational elements
 - `nav`: The navigation section (typically in the `header`), which allows users to link to different sections of your page
@@ -130,7 +132,7 @@ The `<body>` section of your page contains all elements that you want to render 
 - `section`: A distinct section of content on your page, containing text, images, links, headers, etc.
 - `footer`: The section at the bottom of your page, which contains copyright information and additional links.
 
-While you can make a page _appear_ the same without these organizational elements, it is crucial for screenreaders to be able to navigate between these sections. It will also help you keep your page well organized. A typical page body may have this structure
+While you can make a page _appear_ the same without these organizational elements, it is crucial for screen readers to be able to navigate between these sections. It will also help you keep your page well organized. A typical page body may have this structure
 
 ```html
 <!doctype html>
@@ -141,7 +143,7 @@ While you can make a page _appear_ the same without these organizational element
     <body>
         <!-- Page header -->
         <header>
-            <h1>My Page Title</h1>
+            <h1>My Big Page Heading</h1>
             <nav>
                 <!-- navigation links in here -->
             </nav>
@@ -191,4 +193,21 @@ If you have multiple elements which you want to provide similar styles, you can 
 <img src="path-to-img3.png">
 ```
 
-In the above example, you could then use the `bordered-img` class to manipualte the look and feel of the first two images.
+In the above example, you could then use the `bordered-img` class to manipulate the look and feel of the first two images.
+
+### Links
+You can use specific tags to _**hyperlink**_ to other pages, or other sections of your current page. The link tag is `<a>`, which stands for "anchor". Your anchor tag user an hyperlink-reference attribute (`href`) to describe where the link should take the user:
+
+```html
+<!-- Link to the "about" section -->
+<a href="#about">About</a>
+
+<!-- More content would be here -->
+<section id="about">
+  <h1>About</h1>  
+  <p>This is a paragraph about the web-page... Maybe it also contains a
+    <a href="https://en.wikipedia.org/wiki/Hyperlink">hyperlink!</a>
+  </p>
+</section>
+```
+Note, in the section above, the anchor tag uses the id `about` with a hash symbol (`#`) in front of it to indicate that it was using the section's `id` to specify the link location. For practice experimenting was basic HTML elements, see [exercise-1](exercise-1).
