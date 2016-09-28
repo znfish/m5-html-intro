@@ -8,16 +8,15 @@
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Contents**
 
-  - [Resources](#resources)
-  - [Basic Syntax](#basic-syntax)
-    - [Self-Closing Tags](#self-closing-tags)
-  - [Document Structure](#document-structure)
-    - [Head section](#head-section)
-    - [Body Section](#body-section)
-- [My Big Page Heading](#my-big-page-heading)
-  - [Attributes](#attributes)
-    - [Identifying Attributes](#identifying-attributes)
-    - [Links](#links)
+- [Resources](#resources)
+- [Basic Syntax](#basic-syntax)
+  - [Self-Closing Tags](#self-closing-tags)
+- [Document Structure](#document-structure)
+  - [Head section](#head-section)
+  - [Body Section](#body-section)
+- [Attributes](#attributes)
+  - [Identifying Attributes](#identifying-attributes)
+  - [Links](#links)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -141,8 +140,7 @@ While you can make a page _appear_ the same without these organizational element
     </head>
     <body>
         <!-- Page header -->
-        <header>
-            <h1>My Big Page Heading</h1>
+        <header>            
             <nav>
                 <!-- navigation links in here -->
             </nav>
@@ -202,7 +200,7 @@ You can use specific tags to _**hyperlink**_ to other pages, or other sections o
 <a href="#about">About</a>
 
 <!-- More content would be here -->
-<section id="bout">
+<section id="about">
   <p>This is a paragraph about the web-page... Maybe it also contains a
     <a href="https://en.wikipedia.org/wiki/Hyperlink">hyperlink!</a>
   </p>
